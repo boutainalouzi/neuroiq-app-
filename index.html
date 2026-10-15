@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- Primary Meta Tags -->
+    <title>NeuroIQ - Test de QI Professionnel & Évaluation Cognitive</title>
+    <meta name="title" content="NeuroIQ - Test de QI Professionnel & Évaluation Cognitive" />
+    <meta name="description" content="Évaluez votre quotient intellectuel avec un test scientifique dynamique : logique, mathématiques, culture générale, sciences et raisonnement spatial. Obtenez votre score, certificat et partagez sur les réseaux sociaux." />
+    <meta name="keywords" content="test de qi, quotient intellectuel, culture generale, maths, logique, mensa, score iq, test d'intelligence" />
+    <meta name="author" content="NeuroIQ" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://neuroiq.app/" />
+    <meta property="og:title" content="NeuroIQ - Test de QI & Aptitudes Multidisciplinaires" />
+    <meta property="og:description" content="Découvrez votre score de QI et votre catégorie cognitive parmi la population. Certificat officiel et partage immédiat." />
+    <meta property="og:image" content="https://neuroiq.app/og-preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="NeuroIQ - Test de QI & Aptitudes Multidisciplinaires" />
+    <meta property="twitter:description" content="Découvrez votre score de QI et votre catégorie cognitive. Partagez votre résultat." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app-container" id="app">
+      <!-- Injected dynamically by main.js -->
+    </div>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="toast-notice" role="alert" aria-live="polite">
+      <span id="toast-icon">✨</span>
+      <span id="toast-msg">Lien copié dans le presse-papier !</span>
+    </div>
+
+    <!-- Methodology Modal -->
+    <div id="method-modal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-card">
+        <button id="close-modal-btn" class="modal-close-btn" aria-label="Fermer la boîte de dialogue">✕</button>
+        <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 0.8rem; color: #fff;">
+          Méthodologie Scientifique de NeuroIQ
+        </h3>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.55;">
+          Le test NeuroIQ est inspiré des principes de la psychométrie moderne (échelles de Wechsler et matrices de Raven).
+        </p>
+        <ul style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1.2rem;">
+          <li><strong>Distribution normale gaussienne</strong> : Moyenne fixée à 100 avec un écart-type de 15.</li>
+          <li><strong>Multidisciplinarité</strong> : 6 domaines clés analysés (Logique, Maths, Culture Générale, Sciences, Raisonnement Spatial, Vocabulaire).</li>
+          <li><strong>Vitesse de traitement</strong> : L'agilité temporelle est valorisée par un multiplicateur de réactivité neuronale.</li>
+          <li><strong>Règle stricte des 3 choix</strong> : Chaque question présente exactement 3 choix et une réponse unique pour une clarté absolue.</li>
+        </ul>
+        <div style="text-align: right;">
+          <button class="btn-secondary" id="modal-ok-btn">J'ai compris</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
